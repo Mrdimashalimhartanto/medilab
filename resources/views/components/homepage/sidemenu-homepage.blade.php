@@ -3,7 +3,7 @@
      <div class="navbar-header">
          <ul class="nav navbar-nav flex-row">
              <li class="nav-item me-auto"><a class="navbar-brand"
-                     href="../../../html/ltr/vertical-menu-template/index.html"><span class="brand-logo">
+                     href="{{ route('homepage.homepage') }}"><span class="brand-logo">
                          <svg viewbox="0 0 139 95" version="1.1" xmlns="{{ url('http://www.w3.org/2000/svg') }}"
                              xmlns:xlink="{{ url('http://www.w3.org/1999/xlink') }}" height="24">
                              <defs>
@@ -63,7 +63,7 @@
                                  data-i18n="Analytics">Registration</span></a>
                      </li>
 
-                     <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span
+                     <li><a class="d-flex align-items-center" href="{{ route('homepage.allorder') }}"><i data-feather="circle"></i><span
                                  class="menu-item text-truncate" data-i18n="eCommerce">All Order</span></a>
                      </li>
 

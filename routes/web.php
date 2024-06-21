@@ -26,5 +26,11 @@ Route::get('/', [HomePageController::class, 'homelanding']);
 
 Route::group(['prefix' => 'app'], function () {
     Route::get('homepage', [HomePageController::class, 'homepage'])->name('homepage.homepage');
+
+    // auth
+    Route::get('logindokter', [HomePageController::class, 'logindokter'])->name('auth.logindokter');
     Route::get('registrasipasien', [HomePageController::class, 'registrasipasien'])->name('auth.registrasipasien');
+
+    // detail template
+    Route::get('allorder', [HomePageController::class, 'allorder'])->name('homepage.allorder');
 });

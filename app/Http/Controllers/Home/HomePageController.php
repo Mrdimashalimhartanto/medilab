@@ -36,6 +36,15 @@ class HomePageController extends Controller
         return view('pages.homepage.reportdokter', ['pageConfigs' => $pageConfigs]);
     }
 
+    // auth untuk dokter 
+
+    public function logindokter()
+    {
+        $pageConfigs = ['pageHeader' => false];
+        
+        return view('pages.auth.logindokter', ['pageConfigs' => $pageConfigs]);
+    }
+
     public function registrasipasien()
     {
         $pageConfigs = ['pageHeader' => false];
@@ -43,5 +52,12 @@ class HomePageController extends Controller
         return view('pages.auth.registrasipasien', ['pageConfigs' => $pageConfigs]);
     }
 
-    // Dicom viewer report
+
+    // template dokter
+    public function allorder()
+    {
+        $pageConfigs = ['pageHeader' => false];
+
+        return view('pages.homepage.allorder', ['pageConfigs' => $pageConfigs]);
+    }
 }

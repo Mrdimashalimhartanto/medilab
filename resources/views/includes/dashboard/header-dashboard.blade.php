@@ -42,7 +42,7 @@
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="cta-btn d-none d-sm-block" href="{{ route('homepage.homepage') }}">Make an Appointment</a>
+            <a class="cta-btn d-none d-sm-block" href="{{ route('auth.logindokter') }}">Make an Appointment</a>
 
         </div>
 
