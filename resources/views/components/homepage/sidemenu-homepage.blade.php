@@ -53,26 +53,36 @@
          <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
              {{-- menu sidebar dashboard --}}
-             <li class=" nav-item"><a class="d-flex align-items-center" href="index.html">
-                     <i data-feather='user'></i><span class="menu-title text-truncate" data-i18n="Dashboards">Patient
-                         Order</span></a>
+             <li id="tab-patient-order" class="nav-item">
+                 <a class="d-flex align-items-center" href="index.html">
+                     <i data-feather='user'></i>
+                     <span class="menu-title text-truncate" data-i18n="Dashboards">Patient Order</span>
+                 </a>
                  <ul class="menu-content">
-
-                     <li><a class="d-flex align-items-center" href="{{ route('homepage.registerpasienworkload') }}"><i
-                                 data-feather='edit'></i><span class="menu-item text-truncate"
-                                 data-i18n="Analytics">Registration</span></a>
+                     <li id="tab-beranda">
+                         <a class="d-flex align-items-center" href="{{ route('homepage.homepage') }}">
+                             <i data-feather='home'></i>
+                             <span class="menu-item text-truncate" data-i18n="Analytics">Beranda</span>
+                         </a>
                      </li>
-
-                     <li><a class="d-flex align-items-center" href="{{ route('homepage.allorder') }}"><i
-                                 data-feather='book'></i><span class="menu-item text-truncate" data-i18n="eCommerce">All
-                                 Order</span></a>
+                     <li id="tab-registration">
+                         <a class="d-flex align-items-center" href="{{ route('homepage.registerpasienworkload') }}">
+                             <i data-feather='edit'></i>
+                             <span class="menu-item text-truncate" data-i18n="Analytics">Registration</span>
+                         </a>
                      </li>
-
-                     <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span
-                                 class="menu-item text-truncate" data-i18n="eCommerce">Exam Room</span></a>
+                     <li id="tab-all-order">
+                         <a class="d-flex align-items-center" href="{{ route('homepage.allorder') }}">
+                             <i data-feather='book'></i>
+                             <span class="menu-item text-truncate" data-i18n="eCommerce">All Order</span>
+                         </a>
                      </li>
-
-
+                     <li id="tab-exam-room">
+                         <a class="d-flex align-items-center" href="{{ route('homepage.examroom') }}">
+                             <i data-feather='database'></i>
+                             <span class="menu-item text-truncate" data-i18n="eCommerce">Exam Room</span>
+                         </a>
+                     </li>
                  </ul>
              </li>
              <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i

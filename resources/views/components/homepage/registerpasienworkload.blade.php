@@ -6,7 +6,7 @@
              <div class="content-header-left col-md-9 col-12 mb-2">
                  <div class="row breadcrumbs-top">
                      <div class="col-12">
-                         <h2 class="content-header-title float-start mb-0">Registrasi Workload Pasien</h2>
+                         <h2 class="content-header-title float-start mb-0">Registration Workload Pasien</h2>
                          <div class="breadcrumb-wrapper">
                              <ol class="breadcrumb">
                                  <li class="breadcrumb-item"><a href="index.html">Home</a>
@@ -20,24 +20,7 @@
                      </div>
                  </div>
              </div>
-             <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
-                 <div class="mb-1 breadcrumb-right">
-                     <div class="dropdown">
-                         <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button"
-                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                 data-feather="grid"></i></button>
-                         <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="app-todo.html"><i
-                                     class="me-1" data-feather="check-square"></i><span
-                                     class="align-middle">Todo</span></a><a class="dropdown-item"
-                                 href="app-chat.html"><i class="me-1" data-feather="message-square"></i><span
-                                     class="align-middle">Chat</span></a><a class="dropdown-item"
-                                 href="app-email.html"><i class="me-1" data-feather="mail"></i><span
-                                     class="align-middle">Email</span></a><a class="dropdown-item"
-                                 href="app-calendar.html"><i class="me-1" data-feather="calendar"></i><span
-                                     class="align-middle">Calendar</span></a></div>
-                     </div>
-                 </div>
-             </div>
+
          </div>
          <div class="content-body">
              <!-- Validation -->
@@ -47,7 +30,7 @@
                      <div class="col-md-6 col-12">
                          <div class="card">
                              <div class="card-header">
-                                 <h4 class="card-title">Bootstrap Validation</h4>
+                                 <h4 class="card-title">Form Registrastion</h4>
                              </div>
                              <div class="card-body">
                                  <form class="needs-validation" novalidate>
@@ -103,13 +86,13 @@
                                      <div class="mb-1">
                                          <label class="form-label" class="d-block">Gender</label>
                                          <div class="form-check my-50">
-                                             <input type="radio" id="validationRadio3"
-                                                 name="validationRadioBootstrap" class="form-check-input" required />
+                                             <input type="radio" id="validationRadio3" name="validationRadioBootstrap"
+                                                 class="form-check-input" required />
                                              <label class="form-check-label" for="validationRadio3">Male</label>
                                          </div>
                                          <div class="form-check">
-                                             <input type="radio" id="validationRadio4"
-                                                 name="validationRadioBootstrap" class="form-check-input" required />
+                                             <input type="radio" id="validationRadio4" name="validationRadioBootstrap"
+                                                 class="form-check-input" required />
                                              <label class="form-check-label" for="validationRadio4">Female</label>
                                          </div>
                                      </div>
@@ -143,85 +126,92 @@
                      <!-- /Bootstrap Validation -->
 
                      <!-- jQuery Validation -->
-                     <div class="col-md-6 col-12">
+                     <div class="col-lg-6">
                          <div class="card">
                              <div class="card-header">
-                                 <h4 class="card-title">jQuery Validation</h4>
+                                 <h4 class="card-title">History Registarion Workload</h4>
                              </div>
                              <div class="card-body">
-                                 <form id="jquery-val-form" method="post">
-                                     <div class="mb-1">
-                                         <label class="form-label" for="basic-default-name">Name</label>
-                                         <input type="text" class="form-control" id="basic-default-name"
-                                             name="basic-default-name" placeholder="John Doe" />
-                                     </div>
-                                     <div class="mb-1">
-                                         <label class="form-label" for="basic-default-email">Email</label>
-                                         <input type="text" id="basic-default-email" name="basic-default-email"
-                                             class="form-control" placeholder="john.doe@email.com" />
-                                     </div>
-                                     <div class="mb-1">
-                                         <label class="form-label" for="basic-default-password">Password</label>
-                                         <input type="password" id="basic-default-password"
-                                             name="basic-default-password" class="form-control"
-                                             placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
-                                     </div>
-                                     <div class="mb-1">
-                                         <label class="form-label" for="confirm-password">Confirm Password</label>
-                                         <input type="password" id="confirm-password" name="confirm-password"
-                                             class="form-control"
-                                             placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
-                                     </div>
-                                     <div class="mb-1">
-                                         <label class="form-label" for="dob">DOB</label>
-                                         <input type="text" class="form-control picker" name="dob"
-                                             id="dob" />
-                                     </div>
-                                     <div class="mb-1">
-                                         <label class="form-label" for="select-country">Country</label>
-                                         <select class="form-select select2" id="select-country"
-                                             name="select-country">
-                                             <option value="">Select Country</option>
-                                             <option value="usa">USA</option>
-                                             <option value="uk">UK</option>
-                                             <option value="france">France</option>
-                                             <option value="australia">Australia</option>
-                                             <option value="spain">Spain</option>
-                                         </select>
-                                     </div>
-                                     <div class="mb-1">
-                                         <label for="customFile" class="form-label">Profile pic</label>
-                                         <input class="form-control" type="file" id="customFile"
-                                             name="customFile" />
-                                     </div>
-                                     <div class="mb-1">
-                                         <label class="d-block form-label">Gender</label>
-                                         <div class="form-check my-50">
-                                             <input type="radio" id="validationRadiojq1" name="validationRadiojq"
-                                                 class="form-check-input" />
-                                             <label class="form-check-label" for="validationRadiojq1">Male</label>
+                                 <ul class="timeline">
+                                     <li class="timeline-item">
+                                         <span
+                                             class="timeline-point timeline-point-secondary timeline-point-indicator"></span>
+                                         <div class="timeline-event">
+                                             <div
+                                                 class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                                 <h6>Client Meeting</h6>
+                                                 <span class="timeline-event-time">45 min ago</span>
+                                             </div>
+                                             <p>Project meeting with john @10:15am.</p>
+                                             <div class="d-flex flex-row align-items-center">
+                                                 <div class="avatar">
+                                                     <img src="../../../app-assets/images/avatars/12-small.png"
+                                                         alt="avatar" height="38" width="38" />
+                                                 </div>
+                                                 <div class="ms-50">
+                                                     <h6 class="mb-0">John Doe (Client)</h6>
+                                                     <span>CEO of Infibeam</span>
+                                                 </div>
+                                             </div>
                                          </div>
-                                         <div class="form-check">
-                                             <input type="radio" id="validationRadiojq2" name="validationRadiojq"
-                                                 class="form-check-input" />
-                                             <label class="form-check-label" for="validationRadiojq2">Female</label>
+                                     </li>
+                                     <li class="timeline-item">
+                                         <span
+                                             class="timeline-point timeline-point-success timeline-point-indicator"></span>
+                                         <div class="timeline-event">
+                                             <div
+                                                 class="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                                                 <h6>Financial Report</h6>
+                                                 <span class="timeline-event-time">2 hours ago</span>
+                                             </div>
+                                             <p class="mb-50">Click the button below to read financial reports</p>
+                                             <button class="btn btn-outline-primary btn-sm" type="button"
+                                                 data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                                                 aria-expanded="true" aria-controls="collapseExample">
+                                                 Show Report
+                                             </button>
+                                             <div class="collapse" id="collapseExample">
+                                                 <ul class="list-group list-group-flush mt-1">
+                                                     <li
+                                                         class="list-group-item d-flex justify-content-between flex-wrap">
+                                                         <span>Last Year's Profit : <span
+                                                                 class="fw-bold">$20000</span></span>
+                                                         <i data-feather="share-2"
+                                                             class="cursor-pointer font-medium-2"></i>
+                                                     </li>
+                                                     <li
+                                                         class="list-group-item d-flex justify-content-between flex-wrap">
+                                                         <span> This Year's Profit : <span
+                                                                 class="fw-bold">$25000</span></span>
+                                                         <i data-feather="share-2"
+                                                             class="cursor-pointer font-medium-2"></i>
+                                                     </li>
+                                                     <li
+                                                         class="list-group-item d-flex justify-content-between flex-wrap">
+                                                         <span> Last Year's Commission : <span
+                                                                 class="fw-bold">$5000</span></span>
+                                                         <i data-feather="share-2"
+                                                             class="cursor-pointer font-medium-2"></i>
+                                                     </li>
+                                                     <li
+                                                         class="list-group-item d-flex justify-content-between flex-wrap">
+                                                         <span> This Year's Commission : <span
+                                                                 class="fw-bold">$7000</span></span>
+                                                         <i data-feather="share-2"
+                                                             class="cursor-pointer font-medium-2"></i>
+                                                     </li>
+                                                     <li
+                                                         class="list-group-item d-flex justify-content-between flex-wrap">
+                                                         <span> This Year's Total Balance : <span
+                                                                 class="fw-bold">$70000</span></span>
+                                                         <i data-feather="share-2"
+                                                             class="cursor-pointer font-medium-2"></i>
+                                                     </li>
+                                                 </ul>
+                                             </div>
                                          </div>
-                                     </div>
-                                     <div class="mb-1">
-                                         <label class="d-block form-label" for="validationBio">Bio</label>
-                                         <textarea class="form-control" id="validationBio" name="validationBiojq" rows="3"></textarea>
-                                     </div>
-                                     <div class="mb-1">
-                                         <div class="form-check">
-                                             <input type="checkbox" class="form-check-input" id="validationCheck"
-                                                 name="validationCheck" />
-                                             <label class="form-check-label" for="validationCheck">Agree to our terms
-                                                 and conditions</label>
-                                         </div>
-                                     </div>
-                                     <button type="submit" class="btn btn-primary" name="submit"
-                                         value="Submit">Submit</button>
-                                 </form>
+                                     </li>
+                                 </ul>
                              </div>
                          </div>
                      </div>

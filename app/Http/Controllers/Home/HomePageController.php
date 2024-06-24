@@ -74,4 +74,11 @@ class HomePageController extends Controller
 
         return view('pages.homepage.registerpasienworkload', ['pageConfigs' => $pageConfigs]);
     }
+
+    public function examroom()
+    {
+        $pageConfigs = ['pageHeader' => false];
+
+        return view('pages.homepage.examroom', ['pageConfigs' => $pageConfigs]);
+    }
 }

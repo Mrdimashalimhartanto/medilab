@@ -23,6 +23,33 @@
  <script src="{{ asset('/app-assets/js/scripts/pages/app-invoice-list.js') }}"></script>
  <!-- END: Page JS-->
 
+ {{-- JS card advance filter --}}
+ <script src="{{ asset('/app-assets/js/scripts/cards/card-advance.js') }}"></script>
+
+ {{-- JS Card analytics --}}
+ <script src="{{ asset('/app-assets/js/scripts/cards/card-analytics.js') }}"></script>
+
+ <script>
+     document.addEventListener('DOMContentLoaded', function() {
+         // Dapatkan semua elemen <li> di dalam .nav-item
+         var navItems = document.querySelectorAll('.nav-item .menu-content li');
+
+         navItems.forEach(function(item) {
+             // Tambahkan event listener untuk klik
+             item.addEventListener('click', function() {
+                 // Hapus kelas 'active' dari semua tab
+                 navItems.forEach(function(nav) {
+                     nav.classList.remove('active');
+                 });
+
+                 // Tambahkan kelas 'active' ke tab yang diklik
+                 item.classList.add('active');
+             });
+         });
+     });
+ </script>
+
+
  <script>
      $(window).on('load', function() {
          if (feather) {

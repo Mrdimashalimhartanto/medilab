@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Home\DetailPasienController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\HomePageController;
 use Illuminate\Support\Facades\Route;
@@ -28,12 +29,17 @@ Route::group(['prefix' => 'app'], function () {
     Route::get('homepage', [HomePageController::class, 'homepage'])->name('homepage.homepage');
 
     // auth
-    Route::get('logindokter', [HomePageController::class, 'logindokter'])->name('auth.logindokter');
-    Route::get('registrasipasien', [HomePageController::class, 'registrasipasien'])->name('auth.registrasipasien');
+    Route::get('login-dokter', [HomePageController::class, 'logindokter'])->name('auth.logindokter');
+    Route::get('registrasi-pasien', [HomePageController::class, 'registrasipasien'])->name('auth.registrasipasien');
 
     // detail template
-    Route::get('allorder', [HomePageController::class, 'allorder'])->name('homepage.allorder');
-    Route::get('registerpasienworkload', [HomePageController::class, 'registerpasienworkload'])->name('homepage.registerpasienworkload');
-    // template dokter
+    Route::get('all-order', [HomePageController::class, 'allorder'])->name('homepage.allorder');
+    Route::get('register-pasienworkload', [HomePageController::class, 'registerpasienworkload'])->name('homepage.registerpasienworkload');
+    Route::get('exam-room', [HomePageController::class, 'examroom'])->name('homepage.examroom');
+
+    // Detail pasien
+    Route::get('detail-pasien', [DetailPasienController::class, 'detailpasien'])->name('list-pasien.detailpasien');
+
+
 
 });
