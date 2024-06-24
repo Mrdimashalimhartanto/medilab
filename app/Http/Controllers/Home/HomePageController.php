@@ -41,7 +41,7 @@ class HomePageController extends Controller
     public function logindokter()
     {
         $pageConfigs = ['pageHeader' => false];
-        
+
         return view('pages.auth.logindokter', ['pageConfigs' => $pageConfigs]);
     }
 
@@ -59,5 +59,19 @@ class HomePageController extends Controller
         $pageConfigs = ['pageHeader' => false];
 
         return view('pages.homepage.allorder', ['pageConfigs' => $pageConfigs]);
+    }
+
+    public function imageviewer()
+    {
+        $pageConfigs = ['pageHeader' => false];
+
+        return view('', ['pageConfigs' => $pageConfigs]);
+    }
+
+    public function registerpasienworkload()
+    {
+        $pageConfigs = ['pageHeader' => false];
+
+        return view('pages.homepage.registerpasienworkload', ['pageConfigs' => $pageConfigs]);
     }
 }

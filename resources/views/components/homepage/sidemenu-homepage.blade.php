@@ -2,8 +2,8 @@
  <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
      <div class="navbar-header">
          <ul class="nav navbar-nav flex-row">
-             <li class="nav-item me-auto"><a class="navbar-brand"
-                     href="{{ route('homepage.homepage') }}"><span class="brand-logo">
+             <li class="nav-item me-auto"><a class="navbar-brand" href="{{ route('homepage.homepage') }}"><span
+                         class="brand-logo">
                          <svg viewbox="0 0 139 95" version="1.1" xmlns="{{ url('http://www.w3.org/2000/svg') }}"
                              xmlns:xlink="{{ url('http://www.w3.org/1999/xlink') }}" height="24">
                              <defs>
@@ -54,17 +54,23 @@
 
              {{-- menu sidebar dashboard --}}
              <li class=" nav-item"><a class="d-flex align-items-center" href="index.html">
-                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Patient
+                     <i data-feather='user'></i><span class="menu-title text-truncate" data-i18n="Dashboards">Patient
                          Order</span></a>
                  <ul class="menu-content">
 
-                     <li><a class="d-flex align-items-center" href="{{ route('auth.registrasipasien') }}"><i
-                                 data-feather="circle"></i><span class="menu-item text-truncate"
+                     <li><a class="d-flex align-items-center" href="{{ route('homepage.homepage') }}"><i
+                                 data-feather='home'></i><span class="menu-item text-truncate"
+                                 data-i18n="Analytics">Home</span></a>
+                     </li>
+
+                     <li><a class="d-flex align-items-center" href="{{ route('homepage.registerpasienworkload') }}"><i
+                                 data-feather='edit'></i><span class="menu-item text-truncate"
                                  data-i18n="Analytics">Registration</span></a>
                      </li>
 
-                     <li><a class="d-flex align-items-center" href="{{ route('homepage.allorder') }}"><i data-feather="circle"></i><span
-                                 class="menu-item text-truncate" data-i18n="eCommerce">All Order</span></a>
+                     <li><a class="d-flex align-items-center" href="{{ route('homepage.allorder') }}"><i
+                                 data-feather='book'></i><span class="menu-item text-truncate" data-i18n="eCommerce">All
+                                 Order</span></a>
                      </li>
 
                      <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span
@@ -104,46 +110,7 @@
                      </li>
                  </ul>
              </li>
-             <li class=" nav-item"><a class="d-flex align-items-center" href="app-file-manager.html"><i
-                         data-feather="save"></i><span class="menu-title text-truncate" data-i18n="File Manager">File
-                         Manager</span></a>
-             </li>
-             <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
-                         data-feather="shield"></i><span class="menu-title text-truncate"
-                         data-i18n="Roles &amp; Permission">Roles &amp; Permission</span></a>
-                 <ul class="menu-content">
-                     <li><a class="d-flex align-items-center" href="app-access-roles.html"><i
-                                 data-feather="circle"></i><span class="menu-item text-truncate"
-                                 data-i18n="Roles">Roles</span></a>
-                     </li>
-                     <li><a class="d-flex align-items-center" href="app-access-permission.html"><i
-                                 data-feather="circle"></i><span class="menu-item text-truncate"
-                                 data-i18n="Permission">Permission</span></a>
-                     </li>
-                 </ul>
-             </li>
-             <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
-                         data-feather="shopping-cart"></i><span class="menu-title text-truncate"
-                         data-i18n="eCommerce">eCommerce</span></a>
-                 <ul class="menu-content">
-                     <li><a class="d-flex align-items-center" href="app-ecommerce-shop.html"><i
-                                 data-feather="circle"></i><span class="menu-item text-truncate"
-                                 data-i18n="Shop">Shop</span></a>
-                     </li>
-                     <li><a class="d-flex align-items-center" href="app-ecommerce-details.html"><i
-                                 data-feather="circle"></i><span class="menu-item text-truncate"
-                                 data-i18n="Details">Details</span></a>
-                     </li>
-                     <li><a class="d-flex align-items-center" href="app-ecommerce-wishlist.html"><i
-                                 data-feather="circle"></i><span class="menu-item text-truncate"
-                                 data-i18n="Wish List">Wish List</span></a>
-                     </li>
-                     <li><a class="d-flex align-items-center" href="app-ecommerce-checkout.html"><i
-                                 data-feather="circle"></i><span class="menu-item text-truncate"
-                                 data-i18n="Checkout">Checkout</span></a>
-                     </li>
-                 </ul>
-             </li>
+
              <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
                          data-feather="user"></i><span class="menu-title text-truncate"
                          data-i18n="User">User</span></a>
@@ -395,10 +362,7 @@
                          data-feather="square"></i><span class="menu-title text-truncate"
                          data-i18n="Modal Examples">Modal Examples</span></a>
              </li>
-             <li class=" navigation-header"><span data-i18n="User Interface">User Interface</span><i
-                     data-feather="more-horizontal"></i>
-             </li>
-             <li class=" nav-item"><a class="d-flex align-items-center" href="ui-typography.html"><i
+             {{-- <li class=" nav-item"><a class="d-flex align-items-center" href="ui-typography.html"><i
                          data-feather="type"></i><span class="menu-title text-truncate"
                          data-i18n="Typography">Typography</span></a>
              </li>
@@ -772,7 +736,7 @@
              <li class=" nav-item"><a class="d-flex align-items-center" href="https://pixinvent.ticksy.com/"
                      target="_blank"><i data-feather="life-buoy"></i><span class="menu-title text-truncate"
                          data-i18n="Raise Support">Raise Support</span></a>
-             </li>
+             </li> --}}
          </ul>
      </div>
  </div>

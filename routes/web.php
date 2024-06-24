@@ -33,4 +33,7 @@ Route::group(['prefix' => 'app'], function () {
 
     // detail template
     Route::get('allorder', [HomePageController::class, 'allorder'])->name('homepage.allorder');
+    Route::get('registerpasienworkload', [HomePageController::class, 'registerpasienworkload'])->name('homepage.registerpasienworkload');
+    // template dokter
+
 });
