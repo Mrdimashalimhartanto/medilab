@@ -58,11 +58,6 @@
                          Order</span></a>
                  <ul class="menu-content">
 
-                     <li><a class="d-flex align-items-center" href="{{ route('homepage.homepage') }}"><i
-                                 data-feather='home'></i><span class="menu-item text-truncate"
-                                 data-i18n="Analytics">Home</span></a>
-                     </li>
-
                      <li><a class="d-flex align-items-center" href="{{ route('homepage.registerpasienworkload') }}"><i
                                  data-feather='edit'></i><span class="menu-item text-truncate"
                                  data-i18n="Analytics">Registration</span></a>

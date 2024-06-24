@@ -29,16 +29,13 @@
 <link rel="stylesheet" type="text/css"
     href="{{ asset('/app-assets/css/plugins/extensions/ext-component-toastr.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/pages/app-invoice-list.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/pages/app-chat-list.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/plugins/charts/chart-apex.css') }}">
-
-<link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/plugins/forms/form-validation.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/plugins/forms/pickers/form-flat-pickr.css') }}">
-<link rel="stylesheet" type="text/css"
-    href="{{ asset('/app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css') }}">
 <!-- END: Page CSS-->
 
 <!-- BEGIN: Page Registrasi dengan cover -->
+{{-- <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/core/menu/menu-types/vertical-menu.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/plugins/forms/form-validation.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/pages/authentication.css') }}"> --}}
+<!-- END: Page Registrasi dengan cover -->
 
 <!-- BEGIN: Custom CSS-->
 <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/style-login.css') }}">
