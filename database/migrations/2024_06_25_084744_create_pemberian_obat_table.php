@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRegPeriksaTable extends Migration
+class CreatePemberianObatTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,18 @@ class CreateRegPeriksaTable extends Migration
      */
     public function up()
     {
-        Schema::create('reg_periksa', function (Blueprint $table) {
+        Schema::create('pemberian_obat', function (Blueprint $table) {
             $table->id();
+
             $table->string('no_rawat');
-            $table->date('tgl_registrasi');
-            $table->time('jam_reg');
-            $table->string('kd_dokter');
-            $table->string('no_rkm_medis');
-            $table->string('nip');
-            $table->double('biaya_reg');
+            $table->string('diagnosa');
+            $table->string('kode_obat');
+
+            $table->double('biaya_obat');
+            $table->double('jumlah');
+            $table->double('tambahan');
+            $table->double('total');
+
             $table->softDeletes();
             $table->timestamps();
         });
@@ -34,6 +37,6 @@ class CreateRegPeriksaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reg_periksa');
+        Schema::dropIfExists('pemberian_obat');
     }
 }

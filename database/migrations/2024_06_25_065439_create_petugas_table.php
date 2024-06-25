@@ -18,7 +18,7 @@ class CreatePetugasTable extends Migration
             $table->string('nip');
             $table->string('nama');
             $table->enum('jk', ['L', 'P']);
-            $table->varchar('tempat_lahir');
+            $table->string('tempat_lahir');
             $table->date('tgl_lahir');
             $table->string('alamat');
             $table->string('password');
