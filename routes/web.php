@@ -39,7 +39,4 @@ Route::group(['prefix' => 'app'], function () {
 
     // Detail pasien
     Route::get('detail-pasien', [DetailPasienController::class, 'detailpasien'])->name('list-pasien.detailpasien');
-
-
-
 });
