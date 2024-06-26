@@ -7,5 +7,10 @@ use Illuminate\Http\Request;
 
 class PemberianObatController extends Controller
 {
-    //
+    public function pemberianobat()
+    {
+        $pageConfigs = ['pageHeader' => false];
+
+        return view('', ['pageConfigs' => $pageConfigs]);
+    }
 }

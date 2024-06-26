@@ -7,5 +7,10 @@ use Illuminate\Http\Request;
 
 class PasienController extends Controller
 {
-    //
+    public function pasien()
+    {
+        $pageConfigs = ['pageHeader' => false];
+
+        return view('pages.list-pasien.pasien', ['pageConfigs' => $pageConfigs]);
+    }
 }
