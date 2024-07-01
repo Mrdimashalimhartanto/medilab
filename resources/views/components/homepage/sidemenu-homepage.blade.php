@@ -93,7 +93,7 @@
                          data-feather="file-text"></i><span class="menu-title text-truncate"
                          data-i18n="Invoice">Report</span></a>
                  <ul class="menu-content">
-                     <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i
+                     <li><a class="d-flex align-items-center" href="{{ route('report.workload') }}"><i
                                  data-feather="circle"></i><span class="menu-item text-truncate"
                                  data-i18n="List">Workload</span></a>
                      </li>

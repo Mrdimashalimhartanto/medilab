@@ -7,5 +7,10 @@ use Illuminate\Http\Request;
 
 class PetugasController extends Controller
 {
-    //
+    public function petugas()
+    {
+        $pageConfigs = ['pageHeader' => false];
+
+        return view('', ['pageConfigs' => $pageConfigs]);
+    }
 }

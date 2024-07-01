@@ -3,6 +3,7 @@
 use App\Http\Controllers\Home\DetailPasienController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\HomePageController;
+use App\Http\Controllers\Home\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,4 +40,9 @@ Route::group(['prefix' => 'app'], function () {
 
     // Detail pasien
     Route::get('detail-pasien', [DetailPasienController::class, 'detailpasien'])->name('list-pasien.detailpasien');
+
+
+    // Workload
+    Route::get('workload', [ReportController::class, 'workload'])->name('report.workload');
+
 });
